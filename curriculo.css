@@ -1,0 +1,161 @@
+.ft-perfil {
+    border-radius: 100%;
+    max-width: 200px;
+    border: 1px solid black;
+}
+
+a {
+    color: #00f8f8;
+}
+
+body {
+    font-family: 'Mate SC', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    background-color: #00f8f8;
+    color: #202124;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: '';
+    position: absolute; 
+    top: 5px; 
+    bottom: 5px;
+    right: -100px; /* Ajusta a posição horizontal do traço */
+    width: 2px;
+    background-color: #333; 
+}
+
+nav ul li a {
+    color: #202124;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+#apresentacao {
+    padding-top: 69px;
+}
+
+header {
+    text-align: center;
+    background-color: #202124;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-info, .header-presentation {
+    margin: 10px 0;
+}
+
+.presentation-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.presentation-text p {
+    text-align: justify;
+}
+
+.header-presentation a {
+    display: block; 
+    margin-top: 10px;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50%;
+    border-bottom: 2px solid #00f8f8;
+    margin: auto; 
+    margin-top: 10px; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: -5px; 
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list {
+    list-style-type: disc;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.skills-list li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #00f8f8;
+    color: #202124;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #202124;
+    text-decoration: none;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
